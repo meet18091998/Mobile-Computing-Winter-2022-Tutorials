@@ -30,9 +30,19 @@ public class MainActivity extends AppCompatActivity {
                String name = ((EditText)findViewById(R.id.my_name)).getText().toString();
 
                Intent intent = new Intent(getApplicationContext(), ShowMyName.class);
-               Intent intent2 = new Intent(MainActivity.this, ShowMyName.class);
                intent.putExtra("my_name", name);
                startActivity(intent);
+            }
+        });
+
+        ((Button)findViewById(R.id.show_another_name)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String name = ((EditText)findViewById(R.id.my_name)).getText().toString();
+
+                Intent intent = new Intent(getApplicationContext(), ShowMyAnotherName.class);
+                intent.putExtra("my_name", name);
+                startActivity(intent);
             }
         });
     }

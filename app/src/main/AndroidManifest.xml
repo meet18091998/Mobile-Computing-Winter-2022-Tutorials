@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ShowMyAnotherName"
+            android:exported="false" />
+        <activity
             android:name=".ShowMyName"
             android:exported="false" />
         <activity
