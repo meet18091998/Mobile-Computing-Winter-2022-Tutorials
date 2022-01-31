@@ -16,4 +16,21 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/my_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"/>
+
+    <Button
+        android:id="@+id/show_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Me"
+        app:layout_constraintTop_toBottomOf="@id/my_name"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

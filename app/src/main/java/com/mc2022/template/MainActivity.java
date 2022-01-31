@@ -2,8 +2,12 @@ package com.mc2022.template;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -19,6 +23,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         sharedPref = getSharedPreferences("my-application", MODE_PRIVATE);
+
+        ((Button)findViewById(R.id.show_me)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               String name = ((EditText)findViewById(R.id.my_name)).getText().toString();
+
+               Intent intent = new Intent(getApplicationContext(), ShowMyName.class);
+               Intent intent2 = new Intent(MainActivity.this, ShowMyName.class);
+               intent.putExtra("my_name", name);
+               startActivity(intent);
+            }
+        });
     }
 
     @Override
