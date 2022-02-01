@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstraintLayoutTut">
+
+    <TextView
+        android:id="@+id/label_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_name_please"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_your_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/label_username"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_bad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button_rude"
+        app:layout_constraintTop_toBottomOf="@id/label_username" />
+
+    <Button
+        android:id="@+id/button_rude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rude"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/button_bad"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_username" />
+
+    <Button
+        android:id="@+id/button_nice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nice"
+        app:layout_constraintBottom_toTopOf="@id/button_bad"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_username" />
+
+    <Button
+        android:id="@+id/button_cool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cool"
+        app:layout_constraintBottom_toTopOf="@id/button_bad"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/button_nice"
+        app:layout_constraintTop_toBottomOf="@id/label_username" />
+
+    <Button
+        android:id="@+id/button_intelligent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intelligent"
+        app:layout_constraintBottom_toTopOf="@id/button_bad"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintLeft_toLeftOf="@id/button_nice"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_username" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

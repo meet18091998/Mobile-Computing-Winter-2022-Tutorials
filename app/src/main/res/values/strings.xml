@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Tutorial1_Layouts</string>
+    <string name="enter_your_name_please">Enter Your Name Please</string>
+    <string name="cool">Cool</string>
+    <string name="nice">Nice</string>
+    <string name="intelligent">Intelligent</string>
+    <string name="bad">Bad</string>
+    <string name="rude">Rude</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="enter_name_first">Please enter your name first.</string>
 </resources>
