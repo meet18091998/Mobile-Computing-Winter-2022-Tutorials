@@ -1,4 +1,4 @@
-package com.mc2022.template;
+package in.edu.iiitd.cosylab.tut2;
 
 import org.junit.Test;
 
