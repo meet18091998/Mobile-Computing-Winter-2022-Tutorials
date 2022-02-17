@@ -1,4 +1,4 @@
-package in.edu.iiitd.cosylab.tut2;
+package in.edu.iiitd.cosylab.broadcastrec;
 
 import org.junit.Test;
 

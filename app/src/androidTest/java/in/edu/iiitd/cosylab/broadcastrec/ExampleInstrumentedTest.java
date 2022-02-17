@@ -1,4 +1,4 @@
-package in.edu.iiitd.cosylab.tut2;
+package in.edu.iiitd.cosylab.broadcastrec;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("in.edu.iiitd.cosylab.tut2", appContext.getPackageName());
+        assertEquals("in.edu.iiitd.cosylab.broadcastrec", appContext.getPackageName());
     }
 }
