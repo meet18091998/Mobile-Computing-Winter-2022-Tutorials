@@ -1,4 +1,4 @@
-package com.mc2022.template;
+package com.example.room_tutorial;
 
 import org.junit.Test;
 

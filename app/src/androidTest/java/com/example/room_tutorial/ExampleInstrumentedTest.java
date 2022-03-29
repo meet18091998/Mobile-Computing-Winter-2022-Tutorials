@@ -1,4 +1,4 @@
-package com.mc2022.template;
+package com.example.room_tutorial;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.mc2022.template", appContext.getPackageName());
+        assertEquals("com.example.room_tutorial", appContext.getPackageName());
     }
 }
