@@ -1,45 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/openCount"
+    <Button
+        android:id="@+id/download_song"
+        android:text="Download"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content" />
 
-    <EditText
-        android:id="@+id/my_name"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Your Name"/>
 
     <Button
-        android:id="@+id/show_me"
+        android:id="@+id/play_song"
+        android:text="Play"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Show Me"
-        app:layout_constraintTop_toBottomOf="@id/my_name"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/show_another_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Show Another Name"
-        app:layout_constraintLeft_toRightOf="@id/show_me"
-        android:layout_marginLeft="20dp"
-        app:layout_constraintBottom_toBottomOf="@id/show_me" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
