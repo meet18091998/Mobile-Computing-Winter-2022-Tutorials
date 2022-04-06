@@ -1,4 +1,4 @@
-package com.mc2022.template;
+package com.cosylab.mctutresolver;
 
 import org.junit.Test;
 
