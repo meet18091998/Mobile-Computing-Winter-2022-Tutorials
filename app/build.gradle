@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.cosylab.mctutresolver"
+        applicationId "com.cosylab.mctut"
         minSdkVersion 16
         targetSdkVersion 31
         versionCode 1

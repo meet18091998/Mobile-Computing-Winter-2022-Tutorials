@@ -1,4 +1,4 @@
-package com.cosylab.mctutresolver;
+package com.cosylab.mctut;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.cosylab.mctutresolver", appContext.getPackageName());
+        assertEquals("com.cosylab.mctut", appContext.getPackageName());
     }
 }

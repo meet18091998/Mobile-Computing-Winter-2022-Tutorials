@@ -1,4 +1,4 @@
-package com.cosylab.mctutresolver;
+package com.cosylab.mctut;
 
 import org.junit.Test;
 
